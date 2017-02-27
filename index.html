@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="spoons">
-    <link href="styles.css" rel = "stylesheet">
-</head>
-<body>
-<div>
-	<h1>Attention Spooners:</h1>
-	<h4>Maximilien Robespierre once said:</h4>
-	<h4>The secret of freedom lies in educating people, whereas the secret of tyranny is in keeping them ignorant.</p>
-	<p>Beware.</p>
-</div>
-<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-	<div class="flipper">
-		<div class="front">
-			<h2> John Um </h2>
-		</div>
-		<div class="back">
-			<h2> Riya Shah </h2>
-		</div>
-	</div>
-	<div class="flipper">
-		<div class="front">
-			<h2> Raaghav Sreeram </h2>
-		</div>
-		<div class="back">
-			<h2> Anna Chi </h2>
-		</div>
-	</div>
-</div>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<title>SoT</title>
 
-</body>
+    	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    	<link href="styles.css" rel = "stylesheet">
+
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+		<div>
+			<h1>Attention Spooners:</h1>
+			<h4>Maximilien Robespierre once said:</h4>
+			<h4>The secret of freedom lies in educating people, whereas the secret of tyranny is in keeping them ignorant.</h4>
+			<p>Beware.</p>
+			<h4 class="links">
+				<a href="roll.html">roll your killer</a> | 
+				<a href="chain.html">chain</a> | 
+				<a href="posts.html">posts</a> 
+			</h4>
+		</div>
+
+		<div class="card-container">
+ 		 <div class="card">
+    			<div class="side">
+    				<h1>Riya</h1>
+    			</div>
+    			<div class="sideback">
+    				<h1>John Um</h1>
+    			</div>
+  			</div>
+		</div>
+
+		<div class="dead card-container">
+ 		 <div class="card">
+    			<div class="side">
+    				<h1>Sahlik</h1>
+    			</div>
+    			<div class="sideback">
+    				<h1>Blake</h1>
+    			</div>
+  			</div>
+		</div>
+	</body>
+
+	<script>
+		console.log("nice try");
+		
+		$(document).bind("contextmenu",function(e) {
+ 			e.preventDefault();
+		});
+
+		$(document).keydown(function(e){
+    		if(e.which === 123){
+       			return false;
+    		}
+		});
+	</script>
 </html>
