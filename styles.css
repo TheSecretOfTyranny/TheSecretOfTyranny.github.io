@@ -1,42 +1,56 @@
 
-.flip-container {
-	perspective: 1000;
-}
-	
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-
-.flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
-}
-
-.flipper {
-	transition: 2s;
-	transform-style: preserve-3d;
-
-	position: relative;
-}
-
-.front, .back {
-	backface-visibility: hidden;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-}
-
-.back {
-	transform: rotateY(180deg);
-}
-
-h1, h2, h3, h4, h5, h6, p {
+body {
+	font-family: 'Raleway';
 	text-align: center;
 }
+
+.links a{
+	border-bottom: dotted 2px #263238; 
+	text-decoration: none; 
+	color:#263238;
+}
+.card-container {
+  float:left;
+  cursor: crosshair;
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 150px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .sideback {
+backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  color: #B71C1C;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+
+.dead .side{
+    background-color:#B71C1C;
+    color:#fff;
+}
+
